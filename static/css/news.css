@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  background: #1E1E1E;
+  display: grid;
+  grid-template-areas: "header header" "main main" "footer footer";
+}
+
+header {
+  grid-area: header;
+  width: 100%;
+  height: 70px;
+  background: #383838;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  margin-top: -20px;
+}
+
+.header-list {
+  list-style-type: none;
+  display: grid;
+  justify-content: right;
+  grid-template-areas: "news exit";
+}
+.header-list li {
+  margin-right: 20px;
+  margin-top: -43px;
+  display: inline;
+}
+.header-list li a {
+  color: white;
+}
+
+.logo {
+  padding-top: 20px;
+  color: white;
+}
+
+.footer-links-block {
+  grid-area: footerLinks;
+}
+
+.footer-links-list {
+  list-style-type: none;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  justify-content: space-around;
+}
+
+.social-networks-block {
+  grid-area: footerIcons;
+}
+
+.social-networks-list {
+  list-style-type: none;
+  margin-left: -40px;
+}
+.social-networks-list li {
+  display: inline;
+}
+
+.article {
+  width: 600px;
+  height: 380px;
+  background: #383838;
+  margin-top: 10px;
+}
+
+.twitter-icon {
+  margin-top: -10px;
+  width: 30px;
+  height: 30px;
+}
+
+.article-text {
+  position: relative;
+  top: -40px;
+  font-size: 14px;
+}
+
+.best-comment-header {
+  color: white;
+  position: relative;
+  left: 13px;
+  top: 16px;
+}
+
+.comments {
+  margin-top: -56px;
+}
+
+.best-comment-author-image {
+  width: 50px;
+  position: relative;
+  height: 50px;
+  top: -3px;
+  left: 13px;
+  background: #C4C4C4;
+}
+
+.best-comment-texts {
+  position: relative;
+  left: 60px;
+  top: -70px;
+}
+
+.best-comment-text {
+  position: relative;
+  color: white;
+  top: -12px;
+  left: 10px;
+}
+
+.best-comment-author-nickname {
+  position: relative;
+  left: 10px;
+  color: white;
+}
+
+.article-image {
+  width: 400px;
+  height: 235px;
+  margin-left: 180px;
+  margin-top: -200px;
+}
+
+.post-name {
+  position: relative;
+  top: -23px;
+}
+
+.info {
+  color: white;
+  margin-left: 13px;
+}
+
+.field-comment {
+  position: relative;
+  top: -70px;
+  left: 13px;
+  width: 455px;
+  height: 25px;
+  background: #C4C4C4;
+  border-radius: 100px;
+}
+
+.submit-button {
+  background: #4BACE3;
+  width: 60px;
+  position: relative;
+  left: 20px;
+  top: -70px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #4BACE3;
+  color: white;
+}
+
+.read-more {
+  color: white;
+  font-size: 12px;
+  position: relative;
+  right: 510px;
+  top: -45px;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  background: #C4C4C4;
+  left: 13px;
+  top: 13px;
+}
+
+.instagram-icon {
+  margin-top: -10px;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook-icon {
+  margin-top: -10px;
+  width: 30px;
+  height: 30px;
+}
+
+.youtube-icon {
+  margin-top: -10px;
+  width: 30px;
+  height: 30px;
+}
+
+.articles-block {
+  background: #383838;
+}
+
+.article-image {
+  border-radius: 2px;
+}
+
+.social-networks-icons-block {
+  padding-top: 0px;
+}
+
+footer {
+  grid-area: footer;
+  color: white;
+  margin-top: 10vh;
+  width: 100%;
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  grid-template-areas: "footerLinks footerIcons";
+  background-color: #383838;
+}
+
+@media (max-width: 425px) {
+  header {
+    width: 112%;
+  }
+
+  footer {
+    width: 112%;
+  }
+}
