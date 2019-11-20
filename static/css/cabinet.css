@@ -148,6 +148,11 @@ aside {
   background: rgba(51, 50, 49, 0.3);
 }
 
+.add-article {
+  color: white;
+
+}
+
 .footer-links-block {
   grid-area: footerLinks;
 }
@@ -220,6 +225,14 @@ p {
 
 .social-networks-icons-block {
   padding-top: 15px;
+}
+
+.icon {
+  margin-top: -20px;
+}
+
+.icons {
+  text-decoration: none;
 }
 
 .article-title {
