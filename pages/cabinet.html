@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="../static/css/cabinet.css">
   <title>Cabinet</title>
 </head>
-<body>
+<body onload="myFunction()" style="margin:0;">
 
-  <header>
+  <div id="loader"></div>
+
+  <header id="header" class="animate-bottom">
     <h2 class="logo">Logo</h2>
     <div class="header-list-block">
       <ul class="header-list">
@@ -18,8 +20,8 @@
       </ul>
     </div>
   </header>
-  <div class="main-account-info">
-    <span class="account-information">
+  <div class="main-account-info" id="main-acc-info">
+    <span id="account-information" class="animate-bottom">
       <div class="account-photo"></div>
       <div class="main-account-info-block">
           <ul class="main-account-info-list">
@@ -31,7 +33,7 @@
         </div>
     </span>
   </div>
-  <aside>
+  <aside id="aside" class="animate-bottom">
     <div class="aside-stats-block">
       <ul class="aside-stats-list">
         <li>Просмотров: 228</li>
@@ -40,7 +42,7 @@
       </ul>
     </div>
   </aside>
-  <main>
+  <main id="main" class="animate-bottom">
       <div class="article-block">
         <div class="article-image">
         </div>
@@ -161,7 +163,7 @@
         </div>
       </div>
   </main>
-  <footer>
+  <footer id="footer" class="animate-bottom">
     <div class="footer-links-block">
       <ul class="footer-links-list">
         <li>Реклама</li>
@@ -181,5 +183,21 @@
       </div>
     </div>
   </footer>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("header").style.display = "block";
+  document.getElementById("account-information").style.display = "flex";
+  document.getElementById("aside").style.display = "block";
+  document.getElementById("main").style.display = "grid";
+  document.getElementById("footer").style.display = "grid";
+}
+</script>
 </body>
 </html>
